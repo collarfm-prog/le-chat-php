@@ -2228,14 +2228,14 @@ function send_del_confirm(): void
 		echo hidden('multi', 'on');
 	}
 	if(isset($_POST['sendto'])){
-		echo hidden('sendto', $_POST['sendto']);
+		echo hidden('sendto', htmlspecialchars($_POST['sendto']));
 	}
-	echo hidden('confirm', 'yes').hidden('what', $_POST['what']).submit(_('Yes'), 'class="delbutton"').'</form></td><td>'.form('post');
+	echo hidden('confirm', 'yes').hidden('what', htmlspecialchars($_POST['what'])).submit(_('Yes'), 'class="delbutton"').'</form></td><td>'.form('post');
 	if(isset($_POST['multi'])){
 		echo hidden('multi', 'on');
 	}
 	if(isset($_POST['sendto'])){
-		echo hidden('sendto', $_POST['sendto']);
+		echo hidden('sendto', htmlspecialchars($_POST['sendto']));
 	}
 	echo submit(_('No'), 'class="backbutton"').'</form></td><tr></table>';
 	print_end();
