@@ -15,7 +15,7 @@ Features:
 * Optimized for Tor
 * No JavaScript needed
 * Cookies supported, but not needed
-* Captcha
+* Captcha 
 * Multiple languages
 * Members and guests
 * Waiting room for guests
